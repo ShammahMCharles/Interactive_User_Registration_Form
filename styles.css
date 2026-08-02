@@ -41,11 +41,20 @@ h1 {
   box-sizing: border-box; /* Makes width calculation easier */
 }
  
+.form-group input:valid {
+  border-color: #21cb54; 
+}
+
 .form-group input:invalid {
   border-color: #e74c3c; /* Light red for invalid built-in states */
 }
 /* You can add a .valid class if you want to style valid inputs too */
  
+.form-group.success input {
+  border-color: #21cb54; /* Green for success */
+}   
+
+
 .form-group .error-message {
   display: block;
   color: #e74c3c; /* Red for error messages */
