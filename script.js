@@ -6,8 +6,12 @@ const form = document.getElementById('registrationForm');
 
 
 
+
 form.addEventListener('submit', (event) => {
     event.preventDefault();
+    localStorage.setItem('username', JSON.stringify(userNameInput.value));
+    localStorage.setItem('email', JSON.stringify(emailInput.value));
+    localStorage.setItem('password', JSON.stringify(passwordInput.value));
 
     validateInputs();
 });
